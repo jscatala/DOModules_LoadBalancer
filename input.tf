@@ -13,3 +13,9 @@ variable "droplet_ids" {
   type        = list(string)
   description = "List of ids from droplets to work with"
 }
+
+variable "lb_depends_on" {
+	default = null
+	type = any
+	description = "List of dependencies for the module"
+}

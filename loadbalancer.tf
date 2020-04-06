@@ -1,5 +1,7 @@
 resource "digitalocean_loadbalancer" "lb" {
-  name   = var.name
+	depends_on = [var.lb_depends_on]
+
+	name   = var.name
   region = var.region
 
   forwarding_rule {
