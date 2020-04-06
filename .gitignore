@@ -1,0 +1,6 @@
+.terraform/
+terraform.tfvars
+do_token.tf
+backend.tf
+provider.tf
+
